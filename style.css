@@ -216,7 +216,8 @@ h3 {
         row-gap: 20px;
         column-gap: 20px;
         grid-template-areas:
-        "education  project"
+        "education  education"
+        "project    project"
         "skill      hobbies";
     }
 
