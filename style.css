@@ -234,7 +234,7 @@ p {
 
 #hobbies-grid img {
     grid-area: hobbies-image;
-    width: 300px;
+    width: 200px;
 }
 
 #hobby-video {
