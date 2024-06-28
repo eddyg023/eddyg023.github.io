@@ -199,11 +199,11 @@ p {
 
 #hobbies-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr auto;    
     grid-template-areas:
     "hobby1       hobbies-image"
-    "hobby-video  hobbies-image"
+    "hobby-video  ."
 }
 
 #hobby1 {
