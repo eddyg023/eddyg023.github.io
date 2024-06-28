@@ -3,9 +3,16 @@ function displayEmail() {
     email.textContent = 'guo.eddy023@gmail.com';
   }
 
+function hideEmail() {
+    const email = document.querySelector('.email');
+    email.textContent = 'Email';
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const email = document.querySelector('.email');
     email.addEventListener('click', displayEmail);
+    email.addEventListener('mouseout', hideEmail);
 });
 
 

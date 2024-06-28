@@ -9,6 +9,7 @@ html {
 
 header nav ul{
     padding: 0;
+    margin-bottom: 5px;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +40,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1fr 1fr;
     grid-template-areas: 
-    ". name ."
+    ".     name  bottom"
     "quote quote quote";
 }
 
@@ -51,6 +52,7 @@ h1#name {
     margin: 0;
     font-size: 4em;
     grid-area: name;
+    text-align: center;
 }
 
 #about {
@@ -63,11 +65,21 @@ h2 {
     font-size: 1.8em;
     line-height: 1.45em;
     text-align: center;
+    margin: 10px 0px;
 }
 
 h3 {
     font-size: 1em;
     color: #00ADEE;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+p {
+    margin: 5px 0px;
 }
 
 .italic-text {
@@ -119,7 +131,7 @@ h3 {
     "work1 work1"
     "work2 work2"
     "work3 work3"
-
+    "work4 work4"
 }
 
 #experience-grid {
@@ -185,6 +197,50 @@ h3 {
     grid-area: hobbies;
 }
 
+#hobbies-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr auto;    
+    grid-template-areas:
+    "hobby1       hobbies-image"
+    "hobby-video  hobbies-image"
+}
+
+#hobby1 {
+    grid-area: hobby1;
+}
+
+#hobbies-grid #hobby1 ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#hobbies-grid ul li {
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+#hobbies-grid ul li a {
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 5px;
+
+}
+
+#hobbies-grid ul li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#hobbies-grid img {
+    grid-area: hobbies-image;
+    width: 300px;
+}
+
+#hobby-video {
+    grid-area: hobby-video;
+}
+
 @media (max-width: 1024px) {
     #main-grid {
         row-gap: 20px;
@@ -244,6 +300,22 @@ h3 {
         grid-template-areas:
         "school1     school2"
     }
+
+    #hobbies-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "hobby1"      
+        "hobbies-image"
+        "hobby-video"
+    }
+
+    #hobbies-grid img {
+        border-radius: 10px;
+        width: 200px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -302,12 +374,19 @@ h3 {
         "school1"
         "school2"
     }
+
+    #hobbies-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "hobby1"       
+        "hobbies-image"
+        "hobby-video"
+    }
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-}
-
-.top-button {
 }
