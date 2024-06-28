@@ -18,6 +18,15 @@ header nav ul li a {
     color: blue;
 }
 
+.email-info {
+    display: none;
+}
+
+header nav ul li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
 body {
     margin-left: 5%;
     margin-right: 5%;
@@ -53,6 +62,7 @@ h1#name {
 h2 {
     font-size: 1.8em;
     line-height: 1.45em;
+    text-align: center;
 }
 
 h3 {
@@ -292,4 +302,12 @@ h3 {
         "school1"
         "school2"
     }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-button {
 }
