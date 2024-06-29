@@ -215,10 +215,12 @@ p {
     display: grid;
     row-gap: 20px;
     column-gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-    "work1   work2   work3"
+    "work1"
+    "work2"
+    "work3"
 }
 
 /* Projects */
@@ -227,9 +229,10 @@ p {
     display: grid;
     row-gap: 20px;
     column-gap: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "catalog   web"
+    "catalog"
+    "web";
 }
 
 #catalog {
@@ -238,6 +241,11 @@ p {
 
 #web {
     grid-area: web;
+}
+
+#teprojects-grid h3:hover {
+    cursor: pointer;
+    color: red;
 }
 
 /* Hobbies */
@@ -257,7 +265,7 @@ p {
     text-emphasis-color: red;
 }
 
-#basketball, #football {
+#basketball, #football, #gaming {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -271,7 +279,7 @@ p {
     width: 200px;
 }
 
-#basketball-video, #football-video {
+#basketball-video, #football-video, #gaming-video {
     grid-area: video;
     align-self: center;
     width: stretch;
@@ -279,11 +287,8 @@ p {
 
 #football-img img{
     grid-area: image;
-    width: 500px;
+    width: 650px;
 }
-
-
-
 
 @media (max-width: 1024px) {
     #main-grid {
@@ -436,10 +441,9 @@ p {
     #experience-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "education"
-        "project"
-        "skill"
-        "hobbies";
+        "basic-info"
+        "experience-education"
+        "experience-skills";
     }
 
     #projects-grid {
@@ -454,15 +458,6 @@ p {
         grid-template-areas:
         "school1"
         "school2"
-    }
-
-    #hobbies-grid {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "hobbies-basketball"
-        "hobbies-football"
     }
 }
 
