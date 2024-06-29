@@ -61,6 +61,11 @@ h1#name {
     grid-area: quote;
 }
 
+#about p {
+    text-align: center;
+
+}
+
 h2 {
     font-size: 1.8em;
     line-height: 1.45em;
@@ -69,6 +74,7 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-size: 1em;
     color: #00ADEE;
     margin: 5px 0px;
@@ -92,6 +98,8 @@ p {
     height: 350px;
 }
 
+/* Main Grid */
+
 #main-grid {
     margin: 0;
     padding: 0;
@@ -103,9 +111,9 @@ p {
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "headline   headline   headline"
-    ".          picture    ."
-    "work       work       work"
-    "experience experience experience"
+    "picture    picture    picture" 
+    "bio          bio       bio"
+    "other      other      other"
 }
 
 #headline {
@@ -117,38 +125,54 @@ p {
     grid-area: picture;
 }
 
-#student-work {
-    grid-area: work;
+#bio {
+    grid-area: bio;
+
 }
 
-#work-grid {
-    display: grid;
-    row-gap: 20px;
-    column-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "work1 work1"
-    "work2 work2"
-    "work3 work3"
-    "work4 work4"
+#bio h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#basic-info {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#basic-summary {
+    text-align: center;
+}
+
+#student-other {
+    grid-area: other;
 }
 
 #experience-grid {
-    grid-area: experience;
+    text-align: center;
+}
+
+#experience-grid {
     display: grid;
     row-gap: 20px;
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
-    "education      education "
-    "project        project"
-    "skill          hobbies"
+    "education      education"
+    "skill          skills"
 }
 
 #experience-education {
     grid-area: education;
+}
+
+#experience-skills {
+    grid-area: skill;
+}
+
+#experience-hobbies {
+    grid-area: hobbies;
 }
 
 #education-grid {
@@ -168,11 +192,30 @@ p {
     grid-area: school2;
 }
 
-#experience-projects {
-    grid-area: project;
+
+#experience-skill {
+    grid-area: skill;
 }
 
-#projects-grid {
+/* Work Experiences */
+
+#experience-grid {
+    display: block;
+}
+
+#work-grid {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "work1   work2   work3"
+}
+
+/* Projects */
+
+#teprojects-grid {
     display: grid;
     row-gap: 20px;
     column-gap: 50px;
@@ -189,57 +232,50 @@ p {
     grid-area: web;
 }
 
-#experience-skill {
-    grid-area: skill;
-}
+/* Hobbies */
 
 #experience-hobbies {
-    grid-area: hobbies;
-}
-
-#hobbies-grid {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;    
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "hobby1       hobbies-image"
-    "hobby-video  ."
+    "basketball basketball"
+    "football   football"
 }
 
-#hobby1 {
-    grid-area: hobby1;
-}
-
-#hobbies-grid #hobby1 ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-#hobbies-grid ul li {
-    margin-bottom: 5px;
-    text-align: start;
-}
-
-#hobbies-grid ul li a {
-    color: blue;
-    text-decoration: none;
-    margin-bottom: 5px;
-
-}
-
-#hobbies-grid ul li a:hover {
+#hobbies-grid h3:hover {
     cursor: pointer;
-    color: red;
+    text-emphasis-color: red;
 }
 
-#hobbies-grid img {
-    grid-area: hobbies-image;
+#basketball, #football {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image video";
+}
+
+#basketball-img img{
+    grid-area: image;
     width: 200px;
 }
 
-#hobby-video {
-    grid-area: hobby-video;
+#basketball-video, #football-video {
+    grid-area: video;
+    align-self: center;
+    width: stretch;
 }
+
+#football-img img{
+    grid-area: image;
+    width: 500px;
+}
+
+
+
 
 @media (max-width: 1024px) {
     #main-grid {
