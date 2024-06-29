@@ -6,16 +6,27 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
+    <link rel="about" href="/html/about.html">
     <link rel="work-experience" href="/html/work-experience.html">
     <link rel="projects" href="/html/projects.html">
     <link rel="hobbies" href="/html/hobbies.html">
 </head>
+
 <body>
 
-    <header>
+    <main id="home-grid">
+        <div id="student-picture-home">
+            <img src="/pictures/headshot.jpeg" alt="Student Image">
+        </div>
+
+        <div>
+            <h1 id="welcome-message">Welcome to Eddy Guo's Portfolio</h1>
+        </div>
+
         <nav>
-            <ul>
-                <li id="main-tab"><a href="/index.html">Main</a></li>
+            <ul id="menu">
+                <li id="home-tab"><a href="/index.html">Home</a></li>
+                <li id="about-tab"><a href="/html/about.html">About</a></li>
                 <li id="experiences-tab"><a href="/html/work-experience.html">Experiences</a></li>
                 <li id="projects-tab"><a href="/html/projects.html">Projects</a></li>
                 <li id="hobbies-tab"><a href="/html/hobbies.html">Hobbies</a></li>
@@ -23,84 +34,7 @@
                 <li id="github-link"><a href="https://github.com/eddyg023">GitHub</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main id="main-grid">
-        <div id="headline">
-            <h1 id="name">Eddy Guo</h1>
-            <div id="about">
-                <p>
-                    Versatile and detail-oriented professional with a proven track record of quickly adapting to new challenges and solving complex problems,
-                    possessing a keen interest in data analysis and software development, seeking opportunities where skills can be leveraged to drive innovation
-                    and create impactful solutions in these domains.
-                </p>
-            </div>
-        </div>
-
-
-        <div id="student-picture">
-            <img src="/pictures/mirrorTie.jpg" alt="Student Image">
-        </div>
-
-        <div id="bio">
-            <h2>Bio</h2>
-            <p id="basic-info">
-                Birthday: January 16, 2002 <br>
-                Birthplace: New York, NY <br>
-
-            </p>
-            <p id="basic-summary">
-                Eddy Guo is a recent graduate from Stony Brook University with a Bachelor’s in Arts, Economics. He is currently attending Tech Elevator, a
-                30-week full-stack coding boot camp in New York City. Eddy is a detail-oriented professional with a proven track record of quickly adapting
-                to new challenges and solving complex problems. He possesses a keen interest in data analysis and software development, seeking opportunities
-                where his skills can be leveraged to drive innovation and create impactful solutions in these domains.
-            </p>
-        </div>
-
-        <div id="student-other">
-            <h2>Background</h2>
-            <div id="experience-grid">
-                <div id="experience-education">
-                    <h3>Education</h3>
-                    <div id="education-grid">
-                        <div id="te">
-                            <h4>Tech Elevator</h4>
-                            <p>
-                                New York, NY <br> <br>
-                                December 2023 – August 2024 <br> <br>
-                                Attended a 30-week full-stack coding boot camp learning how to
-                                create dynamic web-based software systems using Java providing
-                                800+ hours of development education and application.
-                        </p>
-                    </div>
-                    <div id="stony">
-                        <h4>Stony Brook University</h4>
-                        <p>
-                            Stony Brook, NY <br> <br>
-                            August 2020 – May 2024 <br> <br>
-                            Bachelor’s in Arts, Economics
-                        </p>
-                    </div>
-                </div>
-                <div id="experience-skills">
-                    <h3>Skills</h3>
-                    <div id="skills-grid">
-                        <div id="skill1">
-                            <p>
-                                Java, HTML, CSS, JavaScript, Spring Boot, Vue.js, JDBC, Table Design, SQL,
-                                 PostgreSQL, E/R diagrams, Agile, Unit Testing (JUnit), Integration Testing,
-                                  Git, IntelliJ, Web APIs, REST
-                            </p>
-                        </div>
-                        <div id="skill2">
-                            <p>
-                                Proficient in Windows OS, Mac OS, Microsoft Word, PowerPoint, Excel
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <footer id="footer">
         <p>Copyright: Eddy Guo, 2024 &copy;</p>

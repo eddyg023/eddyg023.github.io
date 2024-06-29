@@ -1,74 +1,15 @@
 * {
     font-family: 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-}
-
-header nav ul{
-    padding: 0;
-    margin-bottom: 5px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header nav ul li a {
-    color: blue;
-    background-color:rgba(192, 192, 192, 0.1);
-    border-radius: 5px;
-    padding: 10px;
-
-}
-
-.email-info {
-    display: none;
-}
-
-header nav ul li a:hover {
-    cursor: pointer;
-    color: red;
+    background-color: skyblue;
 }
 
 body {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: rgba(192, 192, 192, 0.1);
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-#headline {
-    display: grid;
-    border-bottom: solid 1px black;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
-    grid-template-areas: 
-    ".     name  bottom"
-    "quote quote quote";
-}
 
-h1 {
-    font-size: 2em;
-}
-
-h1#name {
-    margin: 0;
-    font-size: 4em;
-    grid-area: name;
-    text-align: center;
-}
-
-#about {
-    padding: 0px;
-    margin: 0px;
-    grid-area: quote;
-}
-
-#about p {
-    text-align: center;
-
-}
 
 h2 {
     font-size: 1.8em;
@@ -92,19 +33,126 @@ p {
     margin: 5px 0px;
 }
 
-.italic-text {
-    font-style: italic;
+/* Home Grid */
+
+#welcome-message{
+    color: blue;
+    font-size: 3em;
 }
 
-#student-picture img{
+#student-picture-home {
+    text-align: center;
+    grid-area: picture;
+}
+
+#student-picture-home img{
     border-radius: 50%;
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 500px;
+    margin: 10px 0;
 }
 
-/* Main Grid */
+#home-grid h1 {
+    text-align: center;
+    margin: 10px 0;
 
-#main-grid {
+}
+
+#home-grid nav {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#home-grid nav ul {
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    width: 600px;
+
+}
+
+#home-grid nav ul li a {
+    background-image: linear-gradient(blue, skyblue);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+
+#home-grid nav ul li a:hover {
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(white, blue);
+    border-radius: 5px;
+}
+
+footer {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* About Grid */
+
+header nav ul{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header nav ul li a {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+header nav ul li a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(92, 164, 192);
+}
+
+#headline {
+    display: grid;
+    border-bottom: solid 1px black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    ".     name  bottom"
+    "quote quote quote";
+}
+
+h1#name {
+    margin: 0;
+    font-size: 4em;
+    grid-area: name;
+    text-align: center;
+}
+
+#about {
+    padding: 0px;
+    margin: 0px;
+    grid-area: quote;
+}
+
+#about p {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#about-grid {
     margin: 0;
     padding: 0;
     display: grid;
@@ -120,6 +168,17 @@ p {
     "other      other      other"
 }
 
+#student-picture-about {
+    text-align: center;
+    grid-area: picture;
+}
+
+#student-picture-about img{
+    border-radius: 50%;
+    width: 300px;
+    height: 350px;
+}
+
 #headline {
     grid-area: headline;
 }
@@ -131,17 +190,22 @@ p {
 
 #bio {
     grid-area: bio;
-
 }
 
 #bio h2 {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 #basic-info {
     text-align: center;
     margin-top: 0px;
+}
+
+#bio h2, #basic-info, #basic-summary {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 #basic-summary {
@@ -291,6 +355,9 @@ p {
 }
 
 @media (max-width: 1024px) {
+    body {
+        padding: 5px;
+    }
     #main-grid {
     margin: 0;
     padding: 0;
@@ -387,11 +454,13 @@ p {
 
     header nav ul {
         display: grid;
+        background-color: skyblue;
+        padding: 10px 0px;
         text-align: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-        "main experience projects hobbies"
-        ". linkedin github ."
+        "home about experience projects"
+        "hobbies linkedin github ."
     }
 
     #linkedin-link {
@@ -413,6 +482,13 @@ p {
         border-radius: 5px;
         padding: 5px;
         flex-wrap: wrap;
+    }
+
+    #home-tab, #about-tab, #experiences-tab, #projects-tab, #hobbies-tab, #linkedin-link, #github-link {
+        background-color: white;
+        margin: 1px 1px;
+        border: black 1px solid;
+        border-radius: 5px;
     }
 
     #headline {
@@ -464,4 +540,17 @@ p {
 footer {
     display: flex;
     justify-content: space-between;
+}
+
+footer button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(92, 164, 192);
 }
