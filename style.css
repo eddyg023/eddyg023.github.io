@@ -17,6 +17,10 @@ header nav ul{
 
 header nav ul li a {
     color: blue;
+    background-color:rgba(192, 192, 192, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+
 }
 
 .email-info {
@@ -171,6 +175,10 @@ p {
     grid-area: skill;
 }
 
+#skills-grid {
+    padding-bottom: 20px;
+}
+
 #experience-hobbies {
     grid-area: hobbies;
 }
@@ -279,17 +287,21 @@ p {
 
 @media (max-width: 1024px) {
     #main-grid {
-        row-gap: 20px;
-        column-gap: 35px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
-        "headline   headline"
-        "picture    picture"
-        "work       work"
-        "experience experience"
-        "experience experience"
-    }
+    margin: 0;
+    padding: 0;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 50px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "headline   headline"
+    "picture    picture" 
+    "bio          bio"
+    "other      other"
+}
+
 
     #headline {
         display: grid;
@@ -297,7 +309,7 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-row: 1fr 1fr;
         grid-template-areas: 
-        ". name name"
+        "name name name"
         "quote quote quote";
     }
 
@@ -323,11 +335,14 @@ p {
         "skill      hobbies";
     }
 
-    #projects-grid {
+    #teprojects-grid {
         row-gap: 20px;
         column-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "catalog     web"
+        "catalog"
+        "web"
     }
 
     #education-grid {
@@ -361,8 +376,38 @@ p {
         grid-template-areas:
         "headline"
         "picture"
-        "work"
-        "experience"
+        "bio"
+        "other"
+    }
+
+    header nav ul {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "main experience projects hobbies"
+        ". linkedin github ."
+    }
+
+    #linkedin-link {
+        grid-area: linkedin;
+    }
+
+    #github-link {
+        grid-area: github;
+    }
+
+    header nav ul li {
+        margin: 5px 0px;
+        padding: 5px;
+    }
+
+    header nav ul li a {
+        color: blue;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        flex-wrap: wrap;
     }
 
     #headline {
@@ -416,9 +461,8 @@ p {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         grid-template-areas:
-        "hobby1"       
-        "hobbies-image"
-        "hobby-video"
+        "hobbies-basketball"
+        "hobbies-football"
     }
 }
 
