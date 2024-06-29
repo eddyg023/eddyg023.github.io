@@ -318,14 +318,9 @@ h1#name {
 
 /* Hobbies */
 
-#experience-hobbies {
-    display: grid;
-    row-gap: 20px;
-    column-gap: 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "basketball basketball"
-    "football   football"
+#hobbies-grid h3 {
+    padding: 10px;
+    margin: 10px;
 }
 
 #hobbies-grid h3:hover {
@@ -333,7 +328,7 @@ h1#name {
     text-emphasis-color: red;
 }
 
-#basketball, #football, #gaming {
+#basketball, #football{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -344,19 +339,69 @@ h1#name {
 
 #basketball-img img{
     grid-area: image;
-    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
 }
 
-#basketball-video, #football-video, #gaming-video {
+#basketball-video, #football-video {
     grid-area: video;
+    padding: 10px;
     align-self: center;
     width: stretch;
 }
 
 #football-img img{
     grid-area: image;
-    width: 650px;
+    padding: 10px;
+    width: 600px;
 }
+
+#gaming, #sleeping, #eating {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image1 image2";
+}
+
+#gaming-pic1 img {
+    grid-area: image1;
+    padding: 10px;
+    width: 500px;
+}
+
+#gaming-pic2 img {
+    grid-area: image2;
+    padding: 10px;
+    width: 500px;
+}
+
+#sleeping-pic1 img {
+    grid-area: image1;
+    padding: 10px;
+    width: 500px;
+}
+
+#sleeping-pic2 img {
+    grid-area: image2;
+    padding: 10px;
+    width: 500px;
+}
+
+#eating-pic1 img {
+    grid-area: image1;
+    padding: 10px;
+    width: 500px;
+}
+
+#eating-pic2 img {
+    grid-area: image2;
+    padding: 10px;
+    width: 500px;
+}
+
 
 @media (max-width: 1024px) {
     body {
@@ -428,15 +473,6 @@ h1#name {
         "school1     school2"
     }
 
-    #hobbies-grid {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "hobby1"      
-        "hobbies-image"
-        "hobby-video"
-    }
 
     #hobbies-grid img {
         border-radius: 10px;
@@ -512,7 +548,6 @@ h1#name {
         "work1"
         "work2"
         "work3"
-    
     }
 
     #experience-grid {
@@ -535,6 +570,26 @@ h1#name {
         grid-template-areas:
         "school1"
         "school2"
+    }
+
+    #basketball, #football{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "image"
+        "video";
+    }
+
+    #gaming, #sleeping, #eating {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "image1"
+        "image2";
     }
 }
 
