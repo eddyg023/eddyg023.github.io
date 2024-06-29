@@ -36,8 +36,10 @@ p {
 /* Home Grid */
 
 #welcome-message{
+    text-align: center;
     color: blue;
     font-size: 3em;
+    padding: 10px;
 }
 
 #student-picture-home {
@@ -50,18 +52,20 @@ p {
     width: 400px;
     height: 500px;
     margin: 10px 0;
+    padding: 10px;
 }
 
 #home-grid h1 {
     text-align: center;
     margin: 10px 0;
-
+    padding: 10px;
 }
 
 #home-grid nav {
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 #home-grid nav ul {
@@ -485,10 +489,7 @@ h1#name {
     }
 
     #home-tab, #about-tab, #experiences-tab, #projects-tab, #hobbies-tab, #linkedin-link, #github-link {
-        background-color: white;
         margin: 1px 1px;
-        border: black 1px solid;
-        border-radius: 5px;
     }
 
     #headline {
