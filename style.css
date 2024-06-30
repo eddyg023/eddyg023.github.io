@@ -1064,6 +1064,7 @@ footer button {
     &:hover {
       color: #fff;
       background-color: #262626;
+      cursor: pointer;
       &:before {
         transform: scaleY(1);
         opacity: 1;
