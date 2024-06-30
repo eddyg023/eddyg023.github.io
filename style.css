@@ -622,7 +622,7 @@ h1#name {
         display: grid;
         padding: 0;
         text-align: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
         "home about experience"
@@ -802,7 +802,7 @@ h1#name {
         display: grid;
         padding: 0;
         text-align: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
         "home about experience"
