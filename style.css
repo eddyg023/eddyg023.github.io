@@ -390,6 +390,60 @@ h1#name {
     display: block;
 }
 
+#student-work h2 {
+    margin-bottom: 10px;
+}
+
+#add-work-experience {
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #262626;
+    transition: .5s;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(2);
+      opacity: 0;
+      transition: .3s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      opacity: 0;
+      transition: .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #262626;
+      cursor: pointer;
+      &:before {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      &:after {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+}
+
 #work-grid {
     display: grid;
     row-gap: 20px;
@@ -415,9 +469,13 @@ h1#name {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 5px;
 }
 
 /* Projects */
+
+
+
 
 #teprojects-grid {
     display: grid;
@@ -624,7 +682,7 @@ h1#name {
 #football-pic2 img{
     grid-area: image1;
     padding: 10px;
-    width: 600px;
+    width: 400px;
 }
 
 #gaming-pic1 img {
@@ -1076,3 +1134,197 @@ footer button {
       }
     }
 }
+
+
+
+
+
+
+/* Adding work Exp */
+
+body {
+    background-color: #ADD8E6;
+    font-family: sans-serif;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    color: #262626;
+    transition: .5s;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(2);
+      opacity: 0;
+      transition: .3s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      opacity: 0;
+      transition: .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #262626;
+      cursor: pointer;
+      &:before {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      &:after {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  
+
+  /* Popup */
+  
+  .popup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+  }
+  .popup-container .popup-box {
+    width: 500px;
+    background: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px;
+    transform: scale(0);
+  }
+  .popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .25s;
+  }
+
+  .popup-box {
+    text-align: center;
+  }
+
+  .popup-box h1 {
+    color: #333;
+    line-height: 1;
+  }
+
+  .close-btn {
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #262626;
+    transition: .5s;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(2);
+      opacity: 0;
+      transition: .3s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      opacity: 0;
+      transition: .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #262626;
+      cursor: pointer;
+      &:before {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      &:after {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+  }
+  
+ 
