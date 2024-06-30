@@ -141,6 +141,7 @@ header nav ul li a {
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
+    padding-top: 0;
 }
 
 #home-grid nav ul {
