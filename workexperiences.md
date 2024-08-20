@@ -17,8 +17,8 @@ July 2023 – Augusy 2024
  documents, while maintaining meticulous records and copies.
 
 ### Kopitiam NYC
-Front of House Server
-New York, NY
+Front of House Server <br>
+New York, NY <br>
 September 2021 – June 2023
 
 - Boostedcustomer satisfaction by 100% with POS software, feedback systems, empathy techniques, and efficient dining issue
