@@ -17,9 +17,7 @@ baseurl: ""
 title: Eddy Guo
 
 # Short description of your site
-description: Versatile and detail-oriented professional with a proven track record of quickly adapting to new challenges and solving complex problems,
- possessing a keen interest in data analysis and software development, seeking opportunities where skills can be leveraged to drive innovation
- and create impactful solutions in these domains.
+description: All About me
 
 # --- Navigation bar options --- #
 
@@ -29,9 +27,7 @@ navbar-links:
     - About Me: "/about/"
   Work Experiences:
     - NOAA: "/noaa/"
-  Software: 
-    - WHAM: "wham"
-    - MixSIAR: "mixsiar"    
+  Software:    
   CV: "https://brianstock.github.io/pdf/BrianStock_CV_current.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
