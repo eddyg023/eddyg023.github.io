@@ -17,21 +17,18 @@ baseurl: ""
 title: Eddy Guo
 
 # Short description of your site
-description: Quantitative marine ecology and fisheries science
+description: Versatile and detail-oriented professional with a proven track record of quickly adapting to new challenges and solving complex problems,
+ possessing a keen interest in data analysis and software development, seeking opportunities where skills can be leveraged to drive innovation
+ and create impactful solutions in these domains.
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Research:
-    - State-space stock assessment: "statespace"    
-    - Length-based assessment: "lengthassess"
-    - Recruitment processes: "recruitment"
-    - Spatial bycatch prediction: "spatialbycatch"    
-    - Mixing models to estimate diet: "mixingmodels"    
-  Workshops:
-    # - Mixing models: "work-mixingmodels"
-    - Intro to R: "work-introR"
+  About:
+    - About Me: "/about/"
+  Work Experiences:
+    - NOAA: "/noaa/"
   Software: 
     - WHAM: "wham"
     - MixSIAR: "mixsiar"    
