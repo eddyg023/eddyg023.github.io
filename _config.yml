@@ -25,7 +25,7 @@ description: All About me
 navbar-links:
   About:
   Work Experiences:
-  Porjects:    
+  Projects:    
   CV: "https://eddyg023.github.io/pdf/GuoEddyResume.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
