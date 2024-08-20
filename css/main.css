@@ -58,6 +58,10 @@ hr.small {
   padding-top: 80px;
 }
 
+div.row {
+  text-align: center;
+}
+
 img {
   border-radius: 50%;
     border: solid 2px black;
