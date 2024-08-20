@@ -51,7 +51,7 @@ hr.small {
   padding-top: 80px;
 }
 
-.col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 {
+.container > .col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 {
   text-align: center;
 }
 
@@ -285,13 +285,6 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  {% if site.footer-col %}
-  background: {{ site.footer-col }};
-  {% endif %}
-  {% if site.footer-img %}
-  background-image: url({{ site.footer-img }});
-  background-attachment: fixed;
-  {% endif %}
 }
 
 footer a {
