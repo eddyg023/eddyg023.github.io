@@ -7,7 +7,7 @@ subtitle: null
 ### Chinese-American Planning Council
 Office Assistant, Intern <br>
 New York, NY <br>
-July 2023 – Augus 2024
+July 2023 – August 2024
 
 - Provided comprehensive clerical support to the Early Childhood Learning and Wellness Services team, including answering phones,
  filing, faxing, light typing, and utilizing computer software for various tasks.
@@ -45,4 +45,3 @@ July 2019 – August 2019
 - Boosted inventory turnover ratio & sales conversion rates through strategic utilization of Excel's Pivot Tables, VLOOKUP, & Conditional Formatting
 - Achieved an increase in merchandise availability by optimizing stock processing, streamlining inventory unloading, & implementing Excel & Barcode scanner tools to enhance time management & organizational efficiency
 - Expanded sales by utilizing shelving units & visual merchandising techniques to organize the storage unit, resulting in improved customer experience
- 
