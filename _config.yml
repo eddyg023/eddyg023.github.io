@@ -24,7 +24,7 @@ description: All About me
 # List of links in the navigation bar
 navbar-links:
   About: "aboutme"
-  Work Experiences: "workexperience"   
+  Work Experiences: "workexperiences"   
   Projects: "projects"
   CV: "https://eddyg023.github.io/pdf/GuoEddyResume.pdf"
 
