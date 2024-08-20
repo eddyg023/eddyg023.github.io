@@ -4,6 +4,8 @@ title: About me
 subtitle: 
 ---
 
+### Education
+
 My name is Eddy Guo. I have attended:
 
 - Tech Elevator

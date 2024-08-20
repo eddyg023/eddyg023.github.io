@@ -26,14 +26,9 @@ navbar-links:
   About: 
   	- About me: "aboutme"
   Work Experiences:
-  	- State-space stock assessment: "statespace"    
-    - Length-based assessment: "lengthassess"
-    - Recruitment processes: "recruitment"
-    - Spatial bycatch prediction: "spatialbycatch"    
-    - Mixing models to estimate diet: "mixingmodels"   
+  - Work Experience: "workexperience"   
   Projects: 
-  	- WHAM: "wham"
-    - MixSIAR: "mixsiar"
+  	- Projects: "projects"
   CV: "https://eddyg023.github.io/pdf/GuoEddyResume.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
