@@ -5,9 +5,9 @@ subtitle: null
 ---
 
 ### Chinese-American Planning Council
-Office Assistant, Intern
-New York, NY
-July 2023 – Augusy 2024
+Office Assistant, Intern <br>
+New York, NY <br>
+July 2023 – Augus 2024
 
 - Provided comprehensive clerical support to the Early Childhood Learning and Wellness Services team, including answering phones,
  filing, faxing, light typing, and utilizing computer software for various tasks.
@@ -29,8 +29,8 @@ September 2021 – June 2023
  productivity assessment, & cost savings monitoring, all while optimizing sales, order processing, & warehouse operations
  
 ### Changing the Present
-Online Researcher 
-New York, NY
+Online Researcher <br>
+New York, NY <br>
 July 2021 – August 2021
 
 - Researched &compiled contact information for 40+ organizations & individuals using Excel & LinkedIn to promote the nonprofit
@@ -38,9 +38,9 @@ July 2021 – August 2021
 - Accumulated outreach by developing a comprehensive outreach strategy integrating market research data into actionable plans with the nonprofit's goals and values
 
 ### Modell's Sporting Goods
-Sales Associate
-New York, NY 
-July 2019 – August 2019 
+Sales Associate <br>
+New York, NY <br>
+July 2019 – August 2019
 
 - Boosted inventory turnover ratio & sales conversion rates through strategic utilization of Excel's Pivot Tables, VLOOKUP, & Conditional Formatting
 - Achieved an increase in merchandise availability by optimizing stock processing, streamlining inventory unloading, & implementing Excel & Barcode scanner tools to enhance time management & organizational efficiency
