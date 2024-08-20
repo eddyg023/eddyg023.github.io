@@ -4,7 +4,7 @@ title: Work Experiences
 subtitle: 
 ---
 
-### Chinese-American Planning CouncilWS
+### Chinese-American Planning Council
 
 - Provided comprehensive clerical support to the Early Childhood Learning and Wellness Services team, including answering phones,
  filing, faxing, light typing, and utilizing computer software for various tasks.

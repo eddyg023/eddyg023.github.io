@@ -4,7 +4,7 @@ title: Projects
 subtitle: 
 ---
 
-### Catalog Application
+### [Catalog Application](https://github.com/eddyg023/TEFinalProjects)
 
 - This project entails developing a lending catalog application that facilitates users sharing items among
  themselves. Building upon prior experience creating a book data application, the design extends functionality to include importing
@@ -12,7 +12,7 @@ subtitle:
  and IntelliJ IDEA as the development environment. Key objectives include implementing robust file I/O mechanisms, designing
  class structures for various item types, and enhancing the user interface for efficient item sharing and retrieval.
 
-### Team Web Service
+### [Team Web Service](https://github.com/eddyg023/TEFinalProjects)
 
 - Developed a sports team management application using Spring Boot and PostgreSQL, featuring a REST API
  with secure, authenticated endpoints for managing team and player data. The project employed the DAO pattern for database
@@ -20,7 +20,7 @@ subtitle:
  application leveraged an external API to enhance functionality. The solution provided a clear utility for effectively managing sports
  teams and players.
 
-### League Stats Tracker
+### [League Stats Tracker](https://github.com/eddyg023/TEFinalProjects)
 
 - Developed a sports team management application using Spring Boot and PostgreSQL, featuring a REST
  API with secure, authenticated endpoints for managing team and player data. The project employed the DAO pattern for database
