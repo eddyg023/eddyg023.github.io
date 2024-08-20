@@ -23,7 +23,7 @@ description: All About me
 
 # List of links in the navigation bar
 navbar-links:
-  About: /aboutme.md/
+  About: /aboutme/
   Work Experiences:
   Projects:    
   CV: "https://eddyg023.github.io/pdf/GuoEddyResume.pdf"
