@@ -67,7 +67,7 @@ author:
   instagram: eddy.023 # eg. daattali
   #youtube: yourlink   # eg. user/daattali or channel/daattali
   #spotify: yourname   # eg. daattali
-  #telephone: yourphone   # eg. +14159998888
+  telephone: 19178086226   # eg. +14159998888
   #steam: yourname     # eg. daattali
   #twitch: yourname    # eg. daattali
   #yelp: yourname      # eg. daattali
@@ -88,7 +88,7 @@ footer-links-active:
   instagram: true
   youtube: false
   spotify: false
-  telephone: false
+  telephone: true
   steam: false
   twitch: false
   yelp: false
