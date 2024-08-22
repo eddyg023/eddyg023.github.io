@@ -64,6 +64,10 @@ img {
     margin: 10px 0;
 }
 
+.headerimg {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .main-content {
     padding-top: 130px;
