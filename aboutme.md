@@ -5,7 +5,7 @@ subtitle: null
 ---
 ![mirrorTie.jpg]({{site.baseurl}}/img/big-img/mirrorTie.jpg)
 
-Birthplace: New York, NY
+Birthplace: New York, NY <br>
 Birthdate: January 16, 2002
 
 Eddy Guo is a graduate from Stony Brook University with a Bachelor’s in Arts, Economics. He attended Tech Elevator, a 30-week full-stack coding boot camp in New York City. Eddy is a detail-oriented professional with a proven track record of quickly adapting to new challenges and solving complex problems. He possesses a keen interest in data analysis and software development, seeking opportunities where his skills can be leveraged to drive innovation and create impactful solutions in these domains.
