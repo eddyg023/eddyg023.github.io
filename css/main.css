@@ -67,10 +67,6 @@ img {
   text-align: center;
 }
 
-.col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 p {
-  text-align: start;
-}
-
 @media only screen and (min-width: 768px) {
   .main-content {
     padding-top: 130px;
