@@ -17,7 +17,7 @@ Eddy Guo is a graduate from Stony Brook University with a Bachelor’s in Arts, 
  - Attended a 30-week full-stack coding boot camp learning how to create dynamic web-based software systems using Java providing 800+ hours of development education and application.
 
 **Stony Brook University** <br> Stony Brook, NY <br> August 2020 - May 2024
-- Graduated with a Bachelor's in Arts and Sciences, Majoring in Economics
+- Graduated with a Bachelor's in Arts, Majoring in Economics
 
 
 ### Skills
