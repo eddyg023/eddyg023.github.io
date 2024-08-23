@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: null
 ---
-![gradphoto.jpg]({{site.baseurl}}/img/big-img/gradphoto.jpg)
+![pose2.jpg]({{site.baseurl}}/img/big-img/pose2.jpg)
 
 Birthplace: New York, NY <br>
 Birthdate: January 16, 2002
